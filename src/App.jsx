@@ -417,7 +417,7 @@ const projects = [
         category: "Full-Stack",
         desc: "A full-stack task management app built with React and Express. Supports creating, completing, and deleting tasks with persistent data storage.",
         tech: ["React", "Express", "JavaScript", "CSS", "Cookies"],
-        link: "https://github.com/malek1507/project-ep/tree/fc7e1fb631f7493fc9db02b7f53dc00686cf4e3a/etodo2",
+        link: "https://github.com/malek1507/project-ep/tree/main/etodo2",
         highlights: [
             "Designed RESTful API endpoints with Express for CRUD operations",
             "Built responsive React UI with hooks for state management",
@@ -431,7 +431,7 @@ const projects = [
         category: "Game Dev",
         desc: "A Hangman game built in Python using Pygame, featuring multiple difficulty levels, a fun animated interface, and a word bank system.",
         tech: ["Python", "Pygame"],
-        link: "https://github.com/malek1507/project-ep/tree/607a8709f01c63045e36f89d0dccb6e5a9655c08/hangman",
+        link: "https://github.com/malek1507/project-ep/tree/main/hangman",
         highlights: [
             "Implemented game loop with event handling and rendering via Pygame",
             "Created 3 difficulty levels with scaled word complexity",
@@ -459,7 +459,7 @@ const projects = [
         category: "Full-Stack / Product Design",
         desc: "A structured debate platform where users post topics and argue PRO, NEUTRAL, or CON. Features a full reputation system, upvote/downvote on arguments, debate following, and a trending feed. Built for Epitech's Product Design module.",
         tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "REST API"],
-        link: "https://github.com/malek1507/project-ep/tree/681d768f4abe887290427fd7b2944a8f960ff5de/ADM",
+        link: "https://github.com/malek1507/project-ep/tree/main/ADM",
         highlights: [
             "Designed the full product from scratch: user research, personas, wireframes, mockups, and Figma prototype before writing a single line of code",
             "Built a 3-column debate layout (PRO / NEUTRAL / CON) with Reddit-style upvote/downvote voting and vote toggling",
@@ -470,11 +470,12 @@ const projects = [
         ],
     },
     {
+        id: "tardis",
         name: "TARDIS",
         category: "Data Science / ML",
         desc: "SNCF train delay predictor built for Epitech's B-DAT-200 module. Analyzes historical delay data, uncovers seasonal patterns, and forecasts delays using a Random Forest model served through an interactive Streamlit dashboard.",
         tech: ["Python", "Pandas", "Scikit-learn", "Streamlit", "Matplotlib", "Joblib"],
-        link: "https://github.com/malek1507",
+        link: "https://github.com/malek1507/project-ep/tree/main/tardis",
         highlights: [
             "Cleaned and engineered features from raw SNCF dataset — extracted month, year, trimestre, and cancellation rate",
             "Compared 3 models: Linear Regression, Random Forest, Gradient Boosting — Random Forest won with RMSE 2.70 and R² of 0.51",
@@ -489,7 +490,7 @@ const projects = [
         category: "Data Science / ML",
         desc: "Grocery order analysis for Epitech's B-DAT module. Explores millions of real-world orders to surface actionable business insights, then builds and compares predictive ML models for reorder behaviour.",
         tech: ["Python", "Jupyter Notebook", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn"],
-        link: "https://github.com/malek1507/project-ep/tree/948ff280c09ed2b58f3a61f016e64acac94e6673/nextbuy",
+        link: "https://github.com/malek1507/project-ep/tree/main/nextbuy",
         highlights: [
             "Preprocessed and merged multiple datasets (orders, products, aisles, departments) into a unified analysis-ready dataframe",
             "Defined 8+ business insight questions and answered each with targeted statistics and visualisations",
@@ -505,12 +506,155 @@ const projects = [
         category: "Cybersecurity",
         desc: "Security audit and exploitation of the intentionally vulnerable OWASP Juice Shop application. Identified and documented multiple OWASP Top 10 vulnerabilities.",
         tech: ["Burp Suite", "DevTools", "JavaScript", "OWASP Top 10"],
-        link: "https://github.com/malek1507/project-ep/tree/8fe2692552d7a24fb6c6ccf783cf28c6662c8fa2/cybersecurity",
+        link: "https://github.com/malek1507/project-ep/tree/main/cybersecurity",
         highlights: [
             "Identified SQL injection, XSS, and broken access control flaws",
             "Used Burp Suite to intercept and manipulate HTTP requests",
             "Documented vulnerabilities with CVSS severity ratings",
             "Proposed mitigations aligned with OWASP remediation guidelines",
+        ],
+    },
+    {
+        id: "sentinel-x",
+        name: "SENTINEL X",
+        category: "Cybersecurity / SOC",
+        desc: "A full detection lab: SupportDesk, an intentionally vulnerable Node.js app, wired to a Prometheus + Grafana monitoring stack and a Wazuh SIEM. Attacks are scripted, detected by custom rules, and qualified for true / false positives.",
+        tech: ["Node.js", "Express", "Docker Compose", "Wazuh", "Prometheus", "Grafana", "Jest", "Python"],
+        link: "https://github.com/malek1507/project-ep/tree/main/sentinelx",
+        highlights: [
+            "Orchestrated the app, monitoring and Wazuh SIEM with Docker Compose and a Makefile (full or light stack)",
+            "Wrote 4 reproducible attack scenarios — brute force, SQL injection, path traversal, recon — each mapped to MITRE ATT&CK",
+            "Built custom Wazuh detection rules and tested every rule against attack and normal log lines",
+            "Generated realistic normal traffic with a Python script to measure the false-positive rate",
+            "Documented Grafana dashboards, an alert qualification report, and functional / non-functional test results",
+        ],
+    },
+    {
+        id: "last-bastion",
+        name: "Last Bastion",
+        category: "Game Dev / OOP",
+        desc: "A 2D tower defense game in Java 21 and JavaFX, built as an OOP proof of concept. Build and upgrade Arrow, Cannon and Frost towers to stop enemies marching along a winding road over 6 waves.",
+        tech: ["Java 21", "JavaFX", "Maven", "JUnit", "JaCoCo", "UML"],
+        link: "https://github.com/malek1507/project-ep/tree/main/2d-game",
+        highlights: [
+            "Separated a pure-Java, fully unit-tested game model from the JavaFX view behind a Game facade",
+            "Applied Strategy, Template Method, Factory, State, Observer and Facade design patterns",
+            "Implemented A* pathfinding for enemy movement along the map",
+            "Wrote a Game Design Document plus UML class and game-loop sequence diagrams",
+            "Measured test coverage with JaCoCo through the Maven wrapper",
+        ],
+    },
+    {
+        id: "job-aggregator",
+        name: "Job Aggregator",
+        category: "Full-Stack / AI",
+        desc: "A CV / job-offer matching platform that aggregates offers and scores how well a candidate's CV fits each one using semantic embeddings. Team project built as four Docker services.",
+        tech: ["React", "TypeScript", "Express", "Prisma", "PostgreSQL", "pgvector", "FastAPI", "Docker"],
+        link: "https://github.com/malek1507/project-ep/tree/main/job-aggregator",
+        highlights: [
+            "Implemented the full authentication module (JWT in HTTP-only cookies, bcrypt, rate limiting)",
+            "Built the complete frontend interface: register, search, offer detail and dashboard pages",
+            "Python FastAPI microservice computes CV / offer similarity with sentence-transformers embeddings",
+            "Layered backend (route → controller → service → repository) on Prisma and PostgreSQL + pgvector",
+            "Scheduled offer ingestion with node-cron, CI with GitHub Actions, WCAG 2.1 AA target on key journeys",
+        ],
+    },
+    {
+        id: "persona",
+        name: "Persona",
+        category: "AI Automation",
+        desc: "A personal AI newsletter with no interface other than a chat. Users sign up by talking to the bot, choose topics, tone and delivery time, and receive a daily fact-checked HTML newsletter built from fresh news.",
+        tech: ["n8n", "Groq", "Google Gemini", "RSS", "SMTP", "Prompt Engineering"],
+        link: "https://github.com/malek1507/project-ep/tree/main/persona",
+        highlights: [
+            "Built 3 n8n workflows: chat (login, consent, settings), scheduled newsletter, and one-click setup",
+            "Email verification with a 6-digit code; settings changed in free text (\"every day at 7:30, I live in New York\")",
+            "AI editor selects and summarises stories from RSS and Google News, with Gemini as fallback model",
+            "Anti-hallucination checks on summaries before sending, with a clickable source for every story",
+            "GDPR handled end to end: consent logging, unsubscribe, and full data deletion by chat",
+        ],
+    },
+    {
+        id: "codewash",
+        name: "CodeWash",
+        category: "Software Quality",
+        desc: "Cleanup of a legacy React / Electron RPG game following a professional refactoring protocol: safety net first, then refactoring, with every change tracked against a technical debt register. Pair project.",
+        tech: ["React", "Electron", "Vite", "Vitest", "ESLint", "Prettier", "GitHub Actions"],
+        link: "https://github.com/malek1507/project-ep/tree/main/codewash",
+        highlights: [
+            "Mapped the codebase and wrote a living technical debt register before touching any code",
+            "Added characterization tests before refactoring, with coverage thresholds enforced in CI",
+            "CI pipeline: lint with security rules, format check, tests with coverage, build and npm audit",
+            "One branch and one reviewed PR per intention, with an automatic mirror to the school repository",
+        ],
+    },
+    {
+        id: "bookworm",
+        name: "Bookworm",
+        category: "NLP / Data",
+        desc: "A CLI NLP engine that generates structured book cards from Project Gutenberg classics, helping editors make sense of a large catalog without reading every book. Team of three.",
+        tech: ["Python", "spaCy", "Scikit-learn", "TF-IDF", "LDA"],
+        link: "https://github.com/malek1507/project-ep/tree/main/alice-in-wonderland",
+        highlights: [
+            "Owned data retrieval and the CLI pipeline: books downloaded from Project Gutenberg on first use",
+            "JSON caching of expensive results to avoid recomputation",
+            "Lexical diversity metrics, named entity recognition, LDA topic modeling",
+            "Extractive summarization and \"5 most similar books\" with TF-IDF + cosine similarity",
+        ],
+    },
+    {
+        id: "codename",
+        name: "Codename",
+        category: "AI Security",
+        desc: "A local LLM agent that guards a secret codeword and only releases it with the right password — hardened against prompt injection and evaluated with an automated attack harness.",
+        tech: ["Ollama", "Granite 3.1", "Python", "Prompt Injection"],
+        link: "https://github.com/malek1507/project-ep/tree/main/codename",
+        highlights: [
+            "Moved the password check into the Ollama Modelfile template so the model never sees the secret without the password",
+            "Built an attack library: instruction override, role-play, fake system turn, output obfuscation, prompt leaking",
+            "Python eval script scores release, utility and leaks over repeated runs",
+            "Tuned sampling parameters and stop tokens to keep answers stable and block fake turns",
+        ],
+    },
+    {
+        id: "exegol",
+        name: "Exegol CTF Write-ups",
+        category: "Pentest / CTF",
+        desc: "Write-ups of Capture The Flag boxes, from enumeration to root: web exploitation, steganography, command injection and privilege escalation chains.",
+        tech: ["Linux", "Hydra", "FTP / SSH", "Python", "Steganography"],
+        link: "https://github.com/malek1507/project-ep/tree/main/exegol",
+        highlights: [
+            "Exploited a command injection with no outbound route by writing output to a shared FTP directory",
+            "Escalated to root via a setuid copy of bash launched in privileged mode",
+            "Recovered credentials from data appended after a PNG's IEND chunk and from whitespace steganography",
+            "Chained sudo misconfigurations across four users to reach root",
+        ],
+    },
+    {
+        id: "leo",
+        name: "leo",
+        category: "Chatbot / Frontend",
+        desc: "A Discord bot that generates personalized learning roadmaps for tech and coding skills, with a landing page and live chat demo.",
+        tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Discord"],
+        link: "https://github.com/malek1507/project-ep/tree/main/eliza-chatbot",
+        highlights: [
+            "Built the landing page: hero with live chat mockup, features, how it works, responsible AI and CTA sections",
+            "Added bot commands for laptop recommendations and comparisons",
+            "Brutalist editorial design: cream background, Bebas Neue type, hard offset shadows",
+            "Scroll reveal animations with IntersectionObserver",
+        ],
+    },
+    {
+        id: "eco-indicators",
+        name: "Ecological Indicators",
+        category: "Hackathon",
+        desc: "Hackathon project: search any French commune and see its ecological indicators, including energy and water consumption, pulled from data.gouv.fr open data.",
+        tech: ["Python", "FastAPI", "JavaScript", "Chart.js", "Open Data"],
+        link: "https://github.com/malek1507/project-ep/tree/main/eco-hackathon",
+        highlights: [
+            "Python API fetching and aggregating ecological open data from data.gouv.fr",
+            "Frontend connected to the API with charts and tables for every indicator",
+            "Filtered data from 2020 onwards for relevant, readable results",
         ],
     },
 ];
@@ -567,10 +711,10 @@ const skills = [
 ];
 
 const techStack = {
-    Languages: ["JavaScript", "TypeScript", "Python", "SQL", "HTML5", "CSS3"],
-    "Frameworks & Libraries": ["React", "Next.js", "Express.js", "Pygame"],
-    "Tools & Platforms": ["Git", "GitHub", "Burp Suite", "Node.js", "npm"],
-    Security: ["OWASP Top 10", "DevTools", "XSS", "SQL Injection", "Burp Suite"],
+    Languages: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "HTML5", "CSS3"],
+    "Frameworks & Libraries": ["React", "Next.js", "Express.js", "FastAPI", "JavaFX", "Electron", "Tailwind CSS", "Prisma", "Pygame"],
+    "Tools & Platforms": ["Git", "GitHub Actions", "Docker", "Node.js", "npm", "Maven", "n8n", "Ollama", "Prometheus", "Grafana"],
+    Security: ["OWASP Top 10", "Burp Suite", "Wazuh SIEM", "MITRE ATT&CK", "XSS", "SQL Injection", "Privilege Escalation", "Prompt Injection"],
 };
 
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────
@@ -620,9 +764,15 @@ function ProjectCard({ project }) {
                 {project.tech.map((t) => <span key={t} className="tech-tag">{t}</span>)}
             </div>
             <div className="project-footer">
-                <a className="project-link" href={project.link} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
-                    ↗ GitHub Repo
-                </a>
+                {project.link ? (
+                    <a className="project-link" href={project.link} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
+                        ↗ GitHub Repo
+                    </a>
+                ) : (
+                    <span className="project-link" style={{ color: COLORS.muted, cursor: "default" }}>
+                        ⊘ Private Epitech repo
+                    </span>
+                )}
                 <span style={{ fontSize: "0.75rem", color: COLORS.muted, fontFamily: "'Space Mono', monospace" }}>
                     {expanded ? "▲ hide" : "▼ details"}
                 </span>
@@ -645,7 +795,7 @@ function Home({ setPage }) {
         <div className="page fade-up">
             <div className="hero-grid">
                 <div>
-                    <div className="hero-tag">▸ AVAILABLE FOR OPPORTUNITIES</div>
+                    <div className="hero-tag">▸ LOOKING FOR 4 TO 6 MONTHS INTERNSHIP</div>
                     <h1 className="hero-name">
                         Malek<br /><span>Darouazi</span>
                     </h1>
@@ -670,7 +820,11 @@ function Home({ setPage }) {
                         />
                     </div>
                     <div className="hero-stats">
-                        {[["6", "Projects"], ["2", "Languages"], ["6", "Skills"]].map(([n, l]) => (
+                        {[
+                            [projects.length, "Projects"],
+                            [techStack["Languages"].length, "Languages"],
+                            [skills.length, "Skills"],
+                        ].map(([n, l]) => (
                             <div className="stat-box" key={l}>
                                 <div className="stat-num">{n}</div>
                                 <div className="stat-label">{l}</div>
@@ -792,7 +946,7 @@ function CV() {
                     <div className="cv-section">
                         <div className="cv-section-title">Projects</div>
                         {projects.map((p) => (
-                            <div className="cv-entry" key={p.id}>2025
+                            <div className="cv-entry" key={p.id}>
                                 <div className="cv-entry-header">
                                     <div>
                                         <div className="cv-entry-title">{p.name}</div>
